@@ -3981,7 +3981,7 @@ importRdata <- function(
             ### Subset to used
             isoSeqNames <- names(isoformNtSeq)
             isoformNtSeq <- isoformNtSeq[which(
-                names(isoformNtSeq) %in% isoformRepExpression$isoform_id
+                names(isoformNtSeq) %in% isoformCountMatrix$isoform_id
             )]
 
             ### Remove potential duplication
